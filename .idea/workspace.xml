@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c92f3a37-9681-4c31-b063-64ead99e27ac" name="Default" comment="" />
+    <list default="true" id="c92f3a37-9681-4c31-b063-64ead99e27ac" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/aiiJobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/aiiJobTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/maillTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/maillTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/aiiJobTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/aiiJobTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/maillTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/maillTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/maillTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/maillTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,23 +30,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="275" />
+          <entry key="java" value="578" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="275" />
+          <entry key="JAVA" value="578" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -48,31 +55,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/aiiJobTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/seleniumTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="218" column="12" selection-start-line="218" selection-start-column="12" selection-end-line="218" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+            <state relative-caret-position="680">
+              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,26 +67,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/aiiJobTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2223">
-              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/maillTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="34" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="34" />
+            <state relative-caret-position="139">
+              <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1057#1276#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,7 +111,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.5.4" />
+        <option name="mavenHome" value="D:/apache-maven-3.5.4/bin" />
         <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -229,7 +201,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545360940220" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545372818026" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -247,7 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.aiiJobTest">
+  <component name="RunManager" selected="JUnit.aiiJobTest.main">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -284,22 +256,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="seleniumTest.BrowserK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="aiiJobTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seleniumDemo" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="seleniumTest" />
-      <option name="METHOD_NAME" value="BrowserK" />
+      <option name="MAIN_CLASS_NAME" value="aiiJobTest" />
+      <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testqidong.Keyboard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="seleniumTest.BrowserK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seleniumDemo" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testqidong" />
-      <option name="METHOD_NAME" value="Keyboard" />
+      <option name="MAIN_CLASS_NAME" value="seleniumTest" />
+      <option name="METHOD_NAME" value="BrowserK" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -315,19 +287,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.testqidong.Keyboard" />
       <item itemvalue="JUnit.seleniumTest.BrowserK" />
       <item itemvalue="Application.test1" />
       <item itemvalue="Application.maillTest" />
       <item itemvalue="Application.aiiJobTest" />
+      <item itemvalue="JUnit.aiiJobTest.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.aiiJobTest.main" />
         <item itemvalue="Application.aiiJobTest" />
         <item itemvalue="Application.maillTest" />
         <item itemvalue="Application.test1" />
         <item itemvalue="JUnit.seleniumTest.BrowserK" />
-        <item itemvalue="JUnit.testqidong.Keyboard" />
       </list>
     </recent_temporary>
   </component>
@@ -346,9 +318,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testqidong_cookieDemo - 2018.08.23 at 11h 26m 37s.xml">
-      <configuration name="testqidong.cookieDemo" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="testqidong_getIma - 2018.08.23 at 13h 22m 35s.xml">
       <configuration name="testqidong.getIma" configurationId="JUnit" />
     </history-entry>
@@ -376,6 +345,9 @@
     <history-entry file="seleniumTest_BrowserK - 2018.12.19 at 15h 48m 22s.xml">
       <configuration name="seleniumTest.BrowserK" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="aiiJobTest_main - 2018.12.21 at 13h 52m 58s.xml">
+      <configuration name="aiiJobTest.main" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="13947000" />
@@ -398,7 +370,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.5797587" visible="true" weight="0.31161472" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.5797587" visible="true" weight="0.3243626" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
@@ -422,16 +394,6 @@
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/WebDriver.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/Cookie.class" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -449,22 +411,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/maillTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="34" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="34" />
+        <state relative-caret-position="179">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1057#1276#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/aiiJobTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2223">
-          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        <state relative-caret-position="680">
+          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/maillTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

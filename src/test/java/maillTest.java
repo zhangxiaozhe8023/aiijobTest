@@ -1,13 +1,4 @@
-// 文件名 SendEmail.java
 
-import java.util.*;
-import javax.mail.*;
-import javax.mail.internet.*;
-import javax.activation.*;
-
-// 需要用户名密码邮件发送实例
-//文件名 SendEmail2.java
-//本实例以QQ邮箱为例，你需要在qq后台设置
 
 import java.util.Properties;
 
@@ -22,10 +13,10 @@ import javax.mail.internet.MimeMessage;
 
 public class maillTest
 {
-    public static void main(String [] args)
+    public static void sendemaill()
          {
         // 收件人电子邮箱
-        String to = "193148037@qq.com";
+        String to = "jianhua.gao@funinhr.com";
 
         // 发件人电子邮箱
         String from = "980778026@qq.com";
@@ -44,7 +35,8 @@ public class maillTest
         Session session = Session.getDefaultInstance(properties,new Authenticator(){
             public PasswordAuthentication getPasswordAuthentication()
             {
-                return new PasswordAuthentication("980778026@qq.com", "uppexnffuezubchg"); //发件人邮件用户名、授权码
+                //发件人邮件用户名、授权码
+                return new PasswordAuthentication("980778026@qq.com", "uppexnffuezubchg");
             }
         });
 
@@ -60,14 +52,14 @@ public class maillTest
                     new InternetAddress(to));
 
             // Set Subject: 头部头字段
-            message.setSubject("This is the Subject Line!");
+            message.setSubject("爱招聘【个人端】异常");
 
             // 设置消息体
-            message.setText("This is actual message");
+            message.setText("网址异常请查收");
 
             // 发送消息
             Transport.send(message);
-            System.out.println("Sent message successfully....from runoob.com");
+            System.out.println("邮件发送成功--大哲哥");
         }catch (MessagingException mex) {
             mex.printStackTrace();
         }

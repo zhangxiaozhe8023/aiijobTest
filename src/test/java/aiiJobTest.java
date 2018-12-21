@@ -1,125 +1,74 @@
-import com.alibaba.fastjson.JSONObject;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
+
 import org.junit.Test;
 
-
-import java.io.IOException;
-
-   import java.net.URI;
-
-import java.net.URISyntaxException;
-
+import java.net.HttpURLConnection;
 import java.net.URL;
-
-import java.net.URLConnection;
-
-    /**普通类*/
 
     public class aiiJobTest {
 
-        public static void main(String[] args) {
 
-            try {
+        /**
+         * 文件名称为：URLAvailability.java
+         * 文件功能简述： 描述一个URL地址是否有效
+         * @author Jason
+         * @time   2010-9-14
+         *
+         */
 
-                System.out.println(isValidUrl("http://job.aiijob.com/a/login")+"---正确地址");
+            private static URL url;
+            private static HttpURLConnection con;
+            private static int state = -1;
+           private String sTime;
+        private long fist_time;
+        private long hua_time;
 
-                UrlWithTime("http://job.aiijob.com/a/login",1000);
-
-            } catch (Exception e) {
-
-                System.out.println("链接不正确");
-
-                e.printStackTrace();
-
-            }
-
-        }
-
-        public static void UrlWithTime(String urlString,int timeOutMillSeconds){
-
-            long lo = System.currentTimeMillis();
-
-            URL url;
-
-            try {
-
-                url = new URL(urlString);
-
-                URLConnection co =  url.openConnection();
-
-                co.setConnectTimeout(timeOutMillSeconds);
-
-                co.connect();
-
-                System.out.println("链接可用");
-
-            } catch (Exception e1) {
-
-                System.out.println("链接打不开!");
-
-                url = null;
-
-            }
-
-            System.out.println(System.currentTimeMillis()-lo);
-
-        }
-
-        private static final String acceptableSchemes[] = {
-
-                "http:",
-
-                "https:",
-
-                "file:"
-
-        };
-
-        private static boolean urlHasAcceptableScheme(String url) {
-
-            if (url == null) {
-
-                return false;
-
-            }
-
-            for (int i = 0; i < acceptableSchemes.length; i++) {
-
-                if (url.startsWith(acceptableSchemes[i])) {
-
-                    return true;
-
+        /**
+             * 功能：检测当前URL是否可连接或是否有效,
+             * 描述：最多连接网络 5 次, 如果 5 次都不成功，视为该地址不可用
+             * @param urlStr 指定URL网络地址
+             * @return URL
+             */
+            public synchronized URL isConnect(String urlStr) {
+                int counts = 0;
+                if (urlStr == null || urlStr.length() <= 0) {
+                    return null;
                 }
+                while (counts < 5) {
+                    try {
+                        url = new URL(urlStr);
+                        fist_time = System.currentTimeMillis();
+                        con = (HttpURLConnection) url.openConnection();
+                        state = con.getResponseCode();
+                       hua_time= (System.currentTimeMillis()-fist_time);
+                        sTime = con.getResponseMessage();
 
-            }
+                        System.out.println(counts +"= "+state);
+                        System.out.println(sTime);
 
-            return false;
+                        if (state == 200 &&  hua_time<1000) {
+                            System.out.println("URL可用！、时间="+hua_time+"ms");
 
-        }
-
-        private static String isValidUrl(String incommingString) throws Exception{
-
-            URL urlObj = new URL(incommingString);
-
-            URI uriObj = new URI(urlObj.getProtocol(), urlObj.getHost(), urlObj.getPath(), urlObj.getQuery(), null);
-
-            String scheme = uriObj.getScheme();
-
-            if (!urlHasAcceptableScheme(incommingString)) {
-
-                if (scheme != null) {
-
-                    throw new URISyntaxException("", "");
-
+                        }else{
+                            //发送邮件
+                            maillTest.sendemaill();
+                        }
+                        break;
+                    }catch (Exception ex) {
+                        counts++;
+                        System.out.println("URL不可用，连接第 "+counts+" 次");
+                        urlStr = null;
+                        continue;
+                    }
                 }
-
+                return url;
             }
-
-            return incommingString;
-
+         @Test
+        public  void main() {
+            aiiJobTest u=new aiiJobTest();
+            u.isConnect("http://job.aiijob.com/a/login");
+            u.isConnect("http://job.aiijob.com/e/login");
+         }
         }
 
-    }
 
 
