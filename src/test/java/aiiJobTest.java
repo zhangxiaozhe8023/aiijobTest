@@ -50,7 +50,7 @@ import java.net.URL;
 
                         }else{
                             //发送邮件
-                            maillTest.sendemaill();
+                            maillTest.main();
                         }
                         break;
                     }catch (Exception ex) {

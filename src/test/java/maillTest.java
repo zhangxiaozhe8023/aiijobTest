@@ -1,7 +1,6 @@
 
 
 import java.util.Properties;
-
 import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -13,10 +12,10 @@ import javax.mail.internet.MimeMessage;
 
 public class maillTest
 {
-    public static void sendemaill()
+    public static void main()
          {
         // 收件人电子邮箱
-        String to = "jianhua.gao@funinhr.com";
+        String to = "193148037@qq.com";
 
         // 发件人电子邮箱
         String from = "980778026@qq.com";
@@ -52,10 +51,10 @@ public class maillTest
                     new InternetAddress(to));
 
             // Set Subject: 头部头字段
-            message.setSubject("爱招聘【个人端】异常");
+            message.setSubject("This is the Subject Line!");
 
             // 设置消息体
-            message.setText("网址异常请查收");
+            message.setText("This is actual message");
 
             // 发送消息
             Transport.send(message);
