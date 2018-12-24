@@ -67,6 +67,7 @@ import java.net.URL;
             aiiJobTest u=new aiiJobTest();
             u.isConnect("http://job.aiijob.com/a/login");
             u.isConnect("http://job.aiijob.com/e/login");
+            System.out.println("test git hup");
          }
         }
 
